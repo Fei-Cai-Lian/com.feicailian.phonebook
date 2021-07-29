@@ -1,6 +1,7 @@
 package com.feicailian.phonebook;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -163,5 +164,30 @@ public class Operate {
     public void orderSex(){
 
     }
+    /**
+     *          三个比较器——按姓名排序 、按年龄排序 、 按性别排序
+     *  按姓名排序的比较器——OrderByName
+     *  按年龄排序的比较器——OrderByAge
+     *  按性别排序的比较器——OrderBySex
+     */
+    class OrderByName implements Comparator<Person>{
+        @Override   //重写姓名比较器
+        public int compare(Person o1, Person o2) {
+            return 0;
+        }
+    }
 
+    class OrderByAge implements Comparator<Person>{
+        @Override   //重写年龄比较器
+        public int compare(Person o1, Person o2) {
+            return 0;
+        }
+    }
+
+    class OrderBySex implements Comparator<Person>{
+        @Override   //重写性别比较器
+        public int compare(Person o1, Person o2) {
+            return 0;
+        }
+    }
 }
